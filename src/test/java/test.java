@@ -18,7 +18,7 @@ public class test {
         Thread.sleep(3000);
         WebElement button = driver.findElement(By.tagName("BUTTON"));
         System.out.println("Submit button display: " + button.isDisplayed());
-        WebElement Name = driver.findElement(By.tagName("first_name-label"));
+        WebElement Name = driver.findElement(By.tagName("First Name"));
         Name.click();
         Name.sendKeys("Rony");
 
