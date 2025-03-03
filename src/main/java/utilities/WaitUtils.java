@@ -9,8 +9,7 @@ import java.time.Duration;
 
 public class WaitUtils {
 
-
-    public static void waitForElementByCssSelector(WebDriver driver, By Locator, int timeoutInSeconds) {
+    public static void waitForElement(WebDriver driver, By Locator, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locator));
     }

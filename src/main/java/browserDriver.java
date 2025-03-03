@@ -10,7 +10,7 @@ import static utilities.log.Log;
 
 public class browserDriver {
 
-    protected static WebDriver driver;
+    public static WebDriver driver;
 
     public static void setup(String URL) {
         WebDriverManager.chromedriver().setup();
