@@ -1,6 +1,4 @@
 
-
-
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import utilities.WaitUtils;
@@ -12,17 +10,18 @@ public class submit_CV extends browserDriver {
 
     // another way to start browser before test or Test-Suit....
 //    @BeforeTest
-    public void startTest() {
-        browserDriver.setup(Base_URL);
-
-    }
+//    public void startTest() {
+//        browserDriver.setup(Base_URL);
+//
+//    }
 
     @AfterTest
     public void endTest() {
+        Log.info("Closing browser");
         closingBrowser();
     }
 
-    @Test(testName = " ")
+    @Test(testName = "Submit a CV file to a QA Manager role")
     public static void submit_cv() throws Exception {
         browserDriver.openChrome(Base_URL);
         Log.info("Start testing");
