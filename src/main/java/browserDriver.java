@@ -12,15 +12,7 @@ public class browserDriver {
 
     public static WebDriver driver;
 
-    public static void setup(String URL) {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(URL);
-    }
-
-    public static void openChrome(String URL) {
+    public static void main(String URL) {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();

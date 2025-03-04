@@ -23,7 +23,7 @@ public class submit_CV extends browserDriver {
 
     @Test(testName = "Submit a CV file to a QA Manager role")
     public static void submit_cv() throws Exception {
-        browserDriver.openChrome(Base_URL);
+        browserDriver.main(Base_URL);
         Log.info("Start testing");
         WaitUtils.waitForElement(driver, homePage.Careers_Element, 10);
         actionUtils.clickOnCareerButton(homePage.Careers_Button, 10);
